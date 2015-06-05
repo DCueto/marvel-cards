@@ -1,8 +1,16 @@
 doctype html
 html(lang="es")
-    head
-        link(rel="stylesheet", href="./public/css/app.css")
-    body
-        include ./lib/card/template.jade
+head
+	meta(charset="UTF-8")
+	title Marvel Cards
+	link(rel="stylesheet", href="./public/css/app.css")
+body
+	section(class="Layout")
+		section(class="Layout-antagonist") antagonist
+		section(class="Layout-main")
+			div(class="Layout-status") status
+			div(class="Layout-battle") battle
+			div(class="Layout-phases") phases
+		section(class="Layout-player") player
 
-        
+		
